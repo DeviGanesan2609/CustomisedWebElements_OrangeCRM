@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[LoginPage has been successfully loaded <br>]]>
+    </line>
+    <line>
+      <![CDATA[LoginPage has been successfully loaded <br>]]>
+    </line>
+    <line>
+      <![CDATA[WelcomePage has been successfully loaded <br>]]>
+    </line>
+    <line>
+      <![CDATA[LoginPage has been successfully loaded <br>]]>
+    </line>
+    <line>
+      <![CDATA[Invalid Credentials : ram & sita<br>]]>
+    </line>
+    <line>
+      <![CDATA[LoginPage has been successfully loaded <br>]]>
+    </line>
+    <line>
+      <![CDATA[Invalid Credentials : durai & devi<br>]]>
+    </line>
+    <line>
+      <![CDATA[LoginPage has been successfully loaded <br>]]>
+    </line>
+    <line>
+      <![CDATA[Valid Credential : Admin & admin123<br>]]>
+    </line>
+    <line>
+      <![CDATA[WelcomePage has been successfully loaded <br>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="65030" started-at="2020-04-11T11:40:43Z" finished-at="2020-04-11T11:41:48Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="65030" started-at="2020-04-11T11:40:43Z" finished-at="2020-04-11T11:41:48Z">
+      <class name="com.OrangeCrm.automation.testCases.TestCases">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:com.OrangeCrm.automation.testCases.TestCases@343f4d3d]" name="initialization" is-config="true" duration-ms="7629" started-at="2020-04-11T17:10:43Z" finished-at="2020-04-11T17:10:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="testCustomeWebElement()[pri:0, instance:com.OrangeCrm.automation.testCases.TestCases@343f4d3d]" name="testCustomeWebElement" duration-ms="26044" started-at="2020-04-11T17:10:51Z" finished-at="2020-04-11T17:11:17Z">
+          <reporter-output>
+            <line>
+              <![CDATA[LoginPage has been successfully loaded <br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testCustomeWebElement -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeCrm.automation.testCases.TestCases@343f4d3d]" name="tearDown" is-config="true" duration-ms="1132" started-at="2020-04-11T17:11:17Z" finished-at="2020-04-11T17:11:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="initialization()[pri:0, instance:com.OrangeCrm.automation.testCases.TestCases@343f4d3d]" name="initialization" is-config="true" duration-ms="3913" started-at="2020-04-11T17:11:18Z" finished-at="2020-04-11T17:11:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.OrangeCrm.automation.testCases.TestCases@343f4d3d]" name="validLoginTest" duration-ms="9029" started-at="2020-04-11T17:11:22Z" finished-at="2020-04-11T17:11:31Z">
+          <reporter-output>
+            <line>
+              <![CDATA[LoginPage has been successfully loaded <br>]]>
+            </line>
+            <line>
+              <![CDATA[WelcomePage has been successfully loaded <br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeCrm.automation.testCases.TestCases@343f4d3d]" name="tearDown" is-config="true" duration-ms="747" started-at="2020-04-11T17:11:31Z" finished-at="2020-04-11T17:11:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="initialization()[pri:0, instance:com.OrangeCrm.automation.testCases.TestCases@343f4d3d]" name="initialization" is-config="true" duration-ms="4083" started-at="2020-04-11T17:11:32Z" finished-at="2020-04-11T17:11:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="validateMultiLogin()[pri:0, instance:com.OrangeCrm.automation.testCases.TestCases@343f4d3d]" name="validateMultiLogin" duration-ms="11711" started-at="2020-04-11T17:11:36Z" finished-at="2020-04-11T17:11:47Z">
+          <reporter-output>
+            <line>
+              <![CDATA[LoginPage has been successfully loaded <br>]]>
+            </line>
+            <line>
+              <![CDATA[Invalid Credentials : ram & sita<br>]]>
+            </line>
+            <line>
+              <![CDATA[LoginPage has been successfully loaded <br>]]>
+            </line>
+            <line>
+              <![CDATA[Invalid Credentials : durai & devi<br>]]>
+            </line>
+            <line>
+              <![CDATA[LoginPage has been successfully loaded <br>]]>
+            </line>
+            <line>
+              <![CDATA[Valid Credential : Admin & admin123<br>]]>
+            </line>
+            <line>
+              <![CDATA[WelcomePage has been successfully loaded <br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateMultiLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeCrm.automation.testCases.TestCases@343f4d3d]" name="tearDown" is-config="true" duration-ms="675" started-at="2020-04-11T17:11:47Z" finished-at="2020-04-11T17:11:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.OrangeCrm.automation.testCases.TestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

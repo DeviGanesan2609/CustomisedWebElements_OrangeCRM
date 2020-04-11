@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="methods">
+  <test name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="com.OrangeCrm.automation.testCases.TestCases">
+        <methods>
+          <include name="initialization"/>
+          <include name="validateMultiLogin"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.OrangeCrm.automation.testCases.TestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

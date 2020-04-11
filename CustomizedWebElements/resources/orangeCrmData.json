@@ -1,0 +1,18 @@
+{
+"TestData":
+	[
+		{
+		"validateMultiLogin":{
+			"userName":"ram",
+			"password":"sita"
+			}
+			
+		},
+		{
+		"secondTc":{
+			"userName":"Durai",
+			"password":"Devi"
+			}
+		}
+	]
+}

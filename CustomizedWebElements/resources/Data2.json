@@ -1,0 +1,4 @@
+	{
+		"validateMultiLogin":{"users":["ram","durai","Admin"],"passwords":["sita","devi","admin123"]},
+		"secondTC":{"userName":"durai","password":"devi"}
+	}
