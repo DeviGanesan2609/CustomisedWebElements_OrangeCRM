@@ -5,9 +5,9 @@
     <classes>
       <class name="com.OrangeCrm.automation.testCases.TestCases">
         <methods>
+          <include name="testCustomWebElement"/>
           <include name="initialization"/>
           <include name="tearDown"/>
-          <include name="validLoginTest"/>
         </methods>
       </class> <!-- com.OrangeCrm.automation.testCases.TestCases -->
     </classes>

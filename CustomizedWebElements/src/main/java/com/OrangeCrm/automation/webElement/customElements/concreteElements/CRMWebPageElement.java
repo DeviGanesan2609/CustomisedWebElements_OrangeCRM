@@ -28,6 +28,7 @@ public class CRMWebPageElement extends CustomWebElement {
      **/
     public void click() {
         getWebDriver().findElement(getBy()).click();
+        
     }
 
     /**
@@ -70,7 +71,10 @@ public class CRMWebPageElement extends CustomWebElement {
      * @return Returns the node text of the element.
      **/
     public String getText() {
-        return getWebDriver().findElement(getBy()).getText();
+        
+    	String innerText=  getWebDriver().findElement(getBy()).getText();
+        Reporter.log("P "+getBy().toString()+": The text is:"+innerText+"<br>");
+    	return innerText;
     }
     
     /**
@@ -82,11 +86,11 @@ public class CRMWebPageElement extends CustomWebElement {
         String actualText = getWebDriver().findElement(getBy()).getText();
         if(actualText.equals(expectedText))
         {
-        	Reporter.log("P Text Matched : Expected -"+expectedText+", Actual -"+actualText );
+        	Reporter.log("P Text Matched by locator:"+getBy().toString()+". Expected -"+expectedText+", Actual -"+actualText +"<br>");
         }
         else
         {
-        	Reporter.log("F Text Mismatch : Expected -"+expectedText+", Actual -"+actualText );
+        	Reporter.log("F Text Mismatched by locator:"+getBy().toString()+".  Expected -"+expectedText+", Actual -"+actualText +"<br>");
         }
     }
     
@@ -100,8 +104,31 @@ public class CRMWebPageElement extends CustomWebElement {
     	int seconds = milliSeconds/1000;
     	WebDriverWait wait = new WebDriverWait(getWebDriver(),seconds);
 		wait.until(ExpectedConditions.visibilityOf(getWebDriver().findElement(getBy())));
+		
     }
     
-    
+    /**
+     * get the value of Attribute 'value'.
+     **/
+    public void getValue() {
+      String value=  getWebDriver().findElement(getBy()).getAttribute("value");
+        Reporter.log("P value of element by locator:"+getBy().toString()+": The text is:"+value+"<br>");
+    }
+    /**
+     * Verifies the node value of the element.
+     *
+     * @return Returns the node value of the element.
+     **/
+    public void verifyValue(String expectedText) {
+        String actualText = getWebDriver().findElement(getBy()).getAttribute("value");
+        if(actualText.equals(expectedText))
+        {
+        	Reporter.log("P Value Matched by locator:"+getBy().toString()+". Expected -"+expectedText+", Actual -"+actualText +"<br>");
+        }
+        else
+        {
+        	Reporter.log("F Value Mismatched by locator:"+getBy().toString()+".  Expected -"+expectedText+", Actual -"+actualText +"<br>");
+        }
+    }
      
 }

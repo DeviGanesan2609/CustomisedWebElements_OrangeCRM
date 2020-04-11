@@ -18,6 +18,7 @@ import org.json.simple.parser.ParseException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -33,17 +34,25 @@ public class TestBase  {
 	
 	
 
-	public static WebDriver webDriver;
+	public static WebDriver driver;
 	public static Properties prop;
 	public static WebDriverWait wait;
-
+	public static EventFiringWebDriver webDriver;
+	public static CustomEventListener listen;
 	
 	@BeforeMethod
 	public void initialization()
 	{	
 		try{
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\user\\Desktop\\LEARNING-Devi\\FreeCRmWorkSpace\\CustomizedWebElements\\chromedriver.exe");
-			webDriver = new ChromeDriver();
+			driver = new ChromeDriver();
+			
+			
+			//Devi 11-Apr-2020: Added below lines to utilize the event listener
+			 listen = new CustomEventListener();
+	         webDriver = new EventFiringWebDriver(driver);
+	         webDriver.register(listen);
+			
 			webDriver.manage().window().maximize();
 		FileInputStream fis = new FileInputStream(new File("C:\\Users\\user\\Desktop\\LEARNING-Devi\\FreeCRmWorkSpace\\CustomizedWebElements\\resources\\orangeCrm.properties"));
 		prop = new Properties();

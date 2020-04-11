@@ -54,12 +54,12 @@ public class LoginPage extends TestBase{
 	public void waitForPageToLoad()
 	{
 		textBoxUserName.waitForVisible(10000);
-		Reporter.log(this.getClass().getSimpleName()+" has been successfully loaded <br>");
+		Reporter.log("P "+ this.getClass().getSimpleName()+" has been successfully loaded <br>");
 	}
 	
 	public void waitForPageToLoad(int milliSeconds)
 	{
 		textBoxUserName.waitForVisible(milliSeconds);
-		Reporter.log(this.getClass().getSimpleName()+" has been successfully loaded <br>");
+		Reporter.log("P "+this.getClass().getSimpleName()+" has been successfully loaded <br>");
 	}
 }

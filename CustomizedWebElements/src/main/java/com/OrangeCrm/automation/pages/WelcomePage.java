@@ -42,13 +42,13 @@ public class WelcomePage extends TestBase{
 		//System.out.println("welcome page wait");
 		//textWelcome.waitForVisible(20000);
 		headerDashboard.waitForVisible(50000);
-		Reporter.log(this.getClass().getSimpleName()+" has been successfully loaded <br>");
+		Reporter.log("P "+this.getClass().getSimpleName()+" has been successfully loaded <br>");
 	}
 	
 	public void waitForPageToLoad(int milliSeconds)
 	{
 	
 		textWelcome.waitForVisible(milliSeconds);
-		Reporter.log(this.getClass().getSimpleName()+" has been successfully loaded <br>");
+		Reporter.log("P "+this.getClass().getSimpleName()+" has been successfully loaded <br>");
 	}
 }

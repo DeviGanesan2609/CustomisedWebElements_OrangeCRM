@@ -14,6 +14,7 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.OrangeCrm.automation.basePackage.TestBase;
@@ -25,21 +26,23 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
-
+//@Listeners(CustomEventListener.class)
 public class TestCases extends TestBase{
 	
-	@Test
-	public void testCustomeWebElement() throws InterruptedException
+	/*@Test
+	public void testCustomWebElement() throws InterruptedException
 	{
 		LoginPage loginPage =new LoginPage();
 		loginPage.invoke();
 		loginPage.waitForPageToLoad();
 				
+		loginPage.buttonLogin.getValue();
+		loginPage.buttonLogin.verifyValue("LOGIN");
 		loginPage.buttonLogin.click();
 		Thread.sleep(20000);
 		System.out.println("Clicked on Login Button");
 		
-	}
+	}*/
 	
 	@Test
 	public void validateMultiLogin() throws FileNotFoundException, IOException, ParseException
@@ -59,7 +62,7 @@ public class TestCases extends TestBase{
 		
 		loginPage.textBoxUserName.sendKeys(users.get(i));
 		loginPage.textBoxPassword.sendKeys(passwords.get(i));
-		
+		loginPage.buttonLogin.verifyValue("LOGIN");
 		loginPage.buttonLogin.click();
 		
 		WelcomePage welcomePage = new WelcomePage();
@@ -69,6 +72,7 @@ public class TestCases extends TestBase{
 		{
 			Reporter.log("Valid Credential : "+users.get(i)+" & "+passwords.get(i)+"<br>"  );
 			welcomePage.waitForPageToLoad();
+			
 		}
 		else
 		{
@@ -86,6 +90,8 @@ public class TestCases extends TestBase{
 		
 		loginPage.textBoxUserName.sendKeys("Admin");
 		loginPage.textBoxPassword.sendKeys("admin123");
+		
+		loginPage.buttonLogin.verifyValue("LOGIN");
 		loginPage.buttonLogin.click();
 		
 		WelcomePage welcomePage = new WelcomePage();
