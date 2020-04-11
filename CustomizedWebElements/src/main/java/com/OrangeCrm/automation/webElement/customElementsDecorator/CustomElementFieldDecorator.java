@@ -1,7 +1,8 @@
 package com.OrangeCrm.automation.webElement.customElementsDecorator;
 
 import org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler;
-import com.OrangeCrm.automation.crmCustomWebElements.customElements.concreteElements.CRMWebPageElement;
+
+import com.OrangeCrm.automation.webElement.customElements.concreteElements.CRMWebPageElement;
 import com.OrangeCrm.automation.webElement.customElements.superElements.CustomWebElement;
 import webElement.transformaer.WebElementTransformer;
 import net.sf.cglib.proxy.Enhancer;

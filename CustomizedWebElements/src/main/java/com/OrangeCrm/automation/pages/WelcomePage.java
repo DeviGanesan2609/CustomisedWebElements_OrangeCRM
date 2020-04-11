@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
 import com.OrangeCrm.automation.basePackage.TestBase;
-import com.OrangeCrm.automation.crmCustomWebElements.customElements.concreteElements.CRMWebPageElement;
+import com.OrangeCrm.automation.webElement.customElements.concreteElements.CRMWebPageElement;
 import com.OrangeCrm.automation.webElement.customElementsDecorator.CustomElementFieldDecorator;
 import com.OrangeCrm.automation.webElement.customElementsDecorator.CustomElementLocator;
 

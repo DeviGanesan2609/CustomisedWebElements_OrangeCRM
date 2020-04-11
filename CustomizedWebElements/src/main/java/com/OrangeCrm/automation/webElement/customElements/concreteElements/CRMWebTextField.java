@@ -1,4 +1,4 @@
-package com.OrangeCrm.automation.crmCustomWebElements.customElements.concreteElements;
+package com.OrangeCrm.automation.webElement.customElements.concreteElements;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
