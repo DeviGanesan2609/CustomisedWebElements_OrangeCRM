@@ -10,7 +10,7 @@ import com.OrangeCrm.automation.webElement.customElements.superElements.CustomWe
 /**
  * A text field.
  **/
-public class CRMWebTextField extends CustomWebElement {
+public class CRMWebTextField extends CRMCustomWebElement {
 
     /**
      * Constructor.
@@ -22,14 +22,14 @@ public class CRMWebTextField extends CustomWebElement {
         super(webDriver, by);
     }
 
-    /**
+  /*  *//**
      * Returns the text of this textfield.
      *
      * @return Returns the text of this textfield.
-     **/
+     **//*
     public String getText() {
         return getAttribute("value");
-    }
+    }*/
 
     /**
      * Sets the text of this textfield.

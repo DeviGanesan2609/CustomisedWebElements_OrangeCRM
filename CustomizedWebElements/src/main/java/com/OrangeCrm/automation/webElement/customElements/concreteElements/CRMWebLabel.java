@@ -9,7 +9,7 @@ import com.OrangeCrm.automation.webElement.customElements.superElements.CustomWe
 /**
  * A label.
  **/
-public class CRMWebLabel extends CustomWebElement {
+public class CRMWebLabel extends CRMCustomWebElement {
 
     /**
      * Constructor.
@@ -25,16 +25,16 @@ public class CRMWebLabel extends CustomWebElement {
 
     /**
      * Returns the text of the label.
-     **/
+     **//*
     public String getText() {
         return getWebDriver().findElement(getBy()).getText();
     }
     
-    /**
+    *//**
      * Verifies the node text of the element.
      *
      * @return Returns the node text of the element.
-     **/
+     **//*
     public void verifyText(String expectedText) {
         String actualText = getWebDriver().findElement(getBy()).getText();
         if(actualText.equals(expectedText))
@@ -45,6 +45,6 @@ public class CRMWebLabel extends CustomWebElement {
         {
         	Reporter.log("F Text Mismatch : Expected -"+expectedText+", Actual -"+actualText );
         }
-    }
+    }*/
     
 }

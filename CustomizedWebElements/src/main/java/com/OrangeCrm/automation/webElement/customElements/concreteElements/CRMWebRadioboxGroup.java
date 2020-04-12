@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Represents a group of radioboxes.
  **/
-public class CRMWebRadioboxGroup extends CustomWebElement {
+public class CRMWebRadioboxGroup extends CRMCustomWebElement {
 
     /**
      * Constructor. Initializes the webelement.exampleElements.

@@ -17,6 +17,7 @@ import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.OrangeCrm.automation.basePackage.CustomTestListener;
 import com.OrangeCrm.automation.basePackage.TestBase;
 import com.OrangeCrm.automation.pages.LoginPage;
 import com.OrangeCrm.automation.pages.WelcomePage;
@@ -26,26 +27,73 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 
-//@Listeners(CustomEventListener.class)
-public class TestCases extends TestBase{
+@Listeners({CustomTestListener.class})
+public class LoginTest extends TestBase{
 	
-	/*@Test
-	public void testCustomWebElement() throws InterruptedException
+	@Test
+	public void TC001_blankUserNamePassword()
 	{
 		LoginPage loginPage =new LoginPage();
 		loginPage.invoke();
 		loginPage.waitForPageToLoad();
-				
-		loginPage.buttonLogin.getValue();
-		loginPage.buttonLogin.verifyValue("LOGIN");
-		loginPage.buttonLogin.click();
-		Thread.sleep(20000);
-		System.out.println("Clicked on Login Button");
 		
-	}*/
+		loginPage.textBoxUserName.sendKeys("");
+		loginPage.textBoxPassword.sendKeys("");
+		loginPage.buttonLogin.click();
+	
+		loginPage.errorInvalidCredential.verifyText("Username cannot be empty");
+		
+	}
 	
 	@Test
-	public void validateMultiLogin() throws FileNotFoundException, IOException, ParseException
+	public void TC002_blankUserName()
+	{
+		LoginPage loginPage =new LoginPage();
+		loginPage.invoke();
+		loginPage.waitForPageToLoad();
+		
+		loginPage.textBoxUserName.sendKeys("");
+		loginPage.textBoxPassword.sendKeys("Test");
+		loginPage.buttonLogin.click();
+	
+		loginPage.errorInvalidCredential.verifyText("Username cannot be empty");
+		
+	}
+	
+	@Test
+	public void TC003_blankPassword()
+	{
+		LoginPage loginPage =new LoginPage();
+		loginPage.invoke();
+		loginPage.waitForPageToLoad();
+		
+		loginPage.textBoxUserName.sendKeys("");
+		loginPage.textBoxPassword.sendKeys("Test");
+		loginPage.buttonLogin.click();
+	
+		loginPage.errorInvalidCredential.verifyText("Password cannot be empty");
+		
+	}
+	
+	@Test
+	public void TC004_validLoginTest()
+	{
+		LoginPage loginPage =new LoginPage();
+		loginPage.invoke();
+		loginPage.waitForPageToLoad();
+		
+		loginPage.textBoxUserName.sendKeys("Admin");
+		loginPage.textBoxPassword.sendKeys("admin123");
+		
+		loginPage.buttonLogin.verifyValue("LOGIN");
+		loginPage.buttonLogin.click();
+		
+		WelcomePage welcomePage = new WelcomePage();
+		welcomePage.waitForPageToLoad();
+	}
+	
+	@Test
+	public void TC005_validateMultiLogin() throws FileNotFoundException, IOException, ParseException
 	{
 		String dataFile ="C:\\Users\\user\\Desktop\\LEARNING-Devi\\FreeCRmWorkSpace\\CustomizedWebElements\\resources\\Data2.json";
 		String testMethod ="validateMultiLogin";
@@ -81,21 +129,6 @@ public class TestCases extends TestBase{
 		}
 	}
 	
-	@Test
-	public void validLoginTest()
-	{
-		LoginPage loginPage =new LoginPage();
-		loginPage.invoke();
-		loginPage.waitForPageToLoad();
-		
-		loginPage.textBoxUserName.sendKeys("Admin");
-		loginPage.textBoxPassword.sendKeys("admin123");
-		
-		loginPage.buttonLogin.verifyValue("LOGIN");
-		loginPage.buttonLogin.click();
-		
-		WelcomePage welcomePage = new WelcomePage();
-		welcomePage.waitForPageToLoad();
-	}
+	
 
 }

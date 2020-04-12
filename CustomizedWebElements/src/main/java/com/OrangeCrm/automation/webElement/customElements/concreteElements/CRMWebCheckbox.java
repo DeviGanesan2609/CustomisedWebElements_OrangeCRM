@@ -9,7 +9,7 @@ import com.OrangeCrm.automation.webElement.customElements.superElements.CustomWe
 /**
  * A checkbox.
  **/
-public class CRMWebCheckbox extends CustomWebElement {
+public class CRMWebCheckbox extends CRMCustomWebElement {
 
     /**
      * Constructor.

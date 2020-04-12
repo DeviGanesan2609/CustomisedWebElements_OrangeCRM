@@ -2,14 +2,14 @@ package com.OrangeCrm.automation.webElement.customElements.concreteElements;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 
 import com.OrangeCrm.automation.webElement.customElements.superElements.CustomWebElement;
 
-/**
- * A button.
- **/
-public class CRMWebButton extends CRMCustomWebElement {//CustomWebElement {
+public class CRMCustomWebElement extends CustomWebElement {
+
 
     /**
      * Constructor.
@@ -17,7 +17,7 @@ public class CRMWebButton extends CRMCustomWebElement {//CustomWebElement {
      * @param webDriver The webdriver usd to interact with the webbrowser.
      * @param by        The locator used to identify the element(s) on the website.
      **/
-    public CRMWebButton(WebDriver webDriver, By by) {
+    public CRMCustomWebElement(WebDriver webDriver, By by) {
         super(webDriver, by);
        // Reporter.log("P Located the element by locator :"+getBy().toString()+"<br>");
     }
@@ -77,5 +77,18 @@ public class CRMWebButton extends CRMCustomWebElement {//CustomWebElement {
         {
         	Reporter.log("F Value Mismatched by locator:"+getBy().toString()+".  Expected -"+expectedText+", Actual -"+actualText +"<br>");
         }
+    }
+    
+    /***
+     * 
+     * Wait for the element to be visible for the given milliSeconds
+     * @param milliSeconds	Time to wait in milliSeconds 
+     * **/
+    public void waitForVisible(int milliSeconds)
+    {	
+    	int seconds = milliSeconds/1000;
+    	WebDriverWait wait = new WebDriverWait(getWebDriver(),seconds);
+		wait.until(ExpectedConditions.visibilityOf(getWebDriver().findElement(getBy())));
+		
     }
 }

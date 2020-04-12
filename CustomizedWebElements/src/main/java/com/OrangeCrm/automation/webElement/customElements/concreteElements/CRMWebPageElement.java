@@ -11,7 +11,7 @@ import com.OrangeCrm.automation.webElement.customElements.superElements.CustomWe
 
 import java.util.List;
 
-public class CRMWebPageElement extends CustomWebElement {
+public class CRMWebPageElement extends CRMCustomWebElement {
 
     /**
      * Constructor.
@@ -23,13 +23,7 @@ public class CRMWebPageElement extends CustomWebElement {
         super(webDriver, by);
     }
 
-    /**
-     * Clicks on the button.
-     **/
-    public void click() {
-        getWebDriver().findElement(getBy()).click();
-        
-    }
+    
 
     /**
      * Sets the text of the element.
@@ -64,12 +58,19 @@ public class CRMWebPageElement extends CustomWebElement {
     public List<WebElement> findElements(By locator) {
         return getWebDriver().findElement(getBy()).findElements(locator);
     }
-
-    /**
+    
+ /*   *//**
+     * Clicks on the button.
+     **//*
+    public void click() {
+        getWebDriver().findElement(getBy()).click();
+        
+    }
+    *//**
      * Returns the node text of the element.
      *
      * @return Returns the node text of the element.
-     **/
+     **//*
     public String getText() {
         
     	String innerText=  getWebDriver().findElement(getBy()).getText();
@@ -77,11 +78,11 @@ public class CRMWebPageElement extends CustomWebElement {
     	return innerText;
     }
     
-    /**
+    *//**
      * Verifies the node text of the element.
      *
      * @return Returns the node text of the element.
-     **/
+     **//*
     public void verifyText(String expectedText) {
         String actualText = getWebDriver().findElement(getBy()).getText();
         if(actualText.equals(expectedText))
@@ -94,11 +95,11 @@ public class CRMWebPageElement extends CustomWebElement {
         }
     }
     
-    /***
+    *//***
      * 
      * Wait for the element to be visible for the given milliSeconds
      * @param milliSeconds	Time to wait in milliSeconds 
-     * **/
+     * **//*
     public void waitForVisible(int milliSeconds)
     {	
     	int seconds = milliSeconds/1000;
@@ -107,18 +108,18 @@ public class CRMWebPageElement extends CustomWebElement {
 		
     }
     
-    /**
+    *//**
      * get the value of Attribute 'value'.
-     **/
+     **//*
     public void getValue() {
       String value=  getWebDriver().findElement(getBy()).getAttribute("value");
         Reporter.log("P value of element by locator:"+getBy().toString()+": The text is:"+value+"<br>");
     }
-    /**
+    *//**
      * Verifies the node value of the element.
      *
      * @return Returns the node value of the element.
-     **/
+     **//*
     public void verifyValue(String expectedText) {
         String actualText = getWebDriver().findElement(getBy()).getAttribute("value");
         if(actualText.equals(expectedText))
@@ -129,6 +130,6 @@ public class CRMWebPageElement extends CustomWebElement {
         {
         	Reporter.log("F Value Mismatched by locator:"+getBy().toString()+".  Expected -"+expectedText+", Actual -"+actualText +"<br>");
         }
-    }
+    }*/
      
 }
