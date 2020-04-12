@@ -1,6 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
+    <line>
+      <![CDATA[P Navigated to https://opensource-demo.orangehrmlive.com/ <br>]]>
+    </line>
+    <line>
+      <![CDATA[P LoginPage has been successfully loaded <br>]]>
+    </line>
+    <line>
+      <![CDATA[P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br>]]>
+    </line>
+    <line>
+      <![CDATA[F Text Mismatched by locator:By.xpath: //span[@id='spanMessage'].  Expected -Password cannot be empty, Actual -Username cannot be empty<br>]]>
+    </line>
+    <line>
+      <![CDATA[P TestCase executed successfully:TestName=blankPassword ; TestResult=PASS<br>]]>
+    </line>
+    <line>
+      <![CDATA[P Navigated to https://opensource-demo.orangehrmlive.com/ <br>]]>
+    </line>
+    <line>
+      <![CDATA[P LoginPage has been successfully loaded <br>]]>
+    </line>
+    <line>
+      <![CDATA[P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br>]]>
+    </line>
+    <line>
+      <![CDATA[P Text Matched by locator:By.xpath: //span[@id='spanMessage']. Expected -Username cannot be empty, Actual -Username cannot be empty<br>]]>
+    </line>
+    <line>
+      <![CDATA[P TestCase executed successfully:TestName=blankUserName ; TestResult=PASS<br>]]>
+    </line>
+    <line>
+      <![CDATA[P Navigated to https://opensource-demo.orangehrmlive.com/ <br>]]>
+    </line>
+    <line>
+      <![CDATA[P LoginPage has been successfully loaded <br>]]>
+    </line>
+    <line>
+      <![CDATA[P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br>]]>
+    </line>
+    <line>
+      <![CDATA[P Text Matched by locator:By.xpath: //span[@id='spanMessage']. Expected -Username cannot be empty, Actual -Username cannot be empty<br>]]>
+    </line>
+    <line>
+      <![CDATA[P TestCase executed successfully:TestName=blankUserNamePassword ; TestResult=PASS<br>]]>
+    </line>
     <line>
       <![CDATA[P Navigated to https://opensource-demo.orangehrmlive.com/ <br>]]>
     </line>
@@ -15,6 +60,9 @@
     </line>
     <line>
       <![CDATA[P WelcomePage has been successfully loaded <br>]]>
+    </line>
+    <line>
+      <![CDATA[P TestCase executed successfully:TestName=validLoginTest ; TestResult=PASS<br>]]>
     </line>
     <line>
       <![CDATA[P Navigated to https://opensource-demo.orangehrmlive.com/ <br>]]>
@@ -64,17 +112,101 @@
     <line>
       <![CDATA[P WelcomePage has been successfully loaded <br>]]>
     </line>
+    <line>
+      <![CDATA[P TestCase executed successfully:TestName=validateMultiLogin ; TestResult=PASS<br>]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="73107" started-at="2020-04-11T19:38:53Z" finished-at="2020-04-11T19:40:06Z">
+  <suite name="Default suite" duration-ms="105200" started-at="2020-04-12T14:11:10Z" finished-at="2020-04-12T14:12:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="73107" started-at="2020-04-11T19:38:53Z" finished-at="2020-04-11T19:40:06Z">
-      <class name="com.OrangeCrm.automation.testCases.TestCases">
-        <test-method status="PASS" signature="initialization()[pri:0, instance:com.OrangeCrm.automation.testCases.TestCases@204f30ec]" name="initialization" is-config="true" duration-ms="8556" started-at="2020-04-12T01:08:53Z" finished-at="2020-04-12T01:09:01Z">
+    <test name="Default test" duration-ms="105200" started-at="2020-04-12T14:11:10Z" finished-at="2020-04-12T14:12:56Z">
+      <class name="com.OrangeCrm.automation.testCases.LoginTest">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:com.OrangeCrm.automation.testCases.LoginTest@146ba0ac]" name="initialization" is-config="true" duration-ms="19728" started-at="2020-04-12T19:41:11Z" finished-at="2020-04-12T19:41:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.OrangeCrm.automation.testCases.TestCases@204f30ec]" name="validLoginTest" duration-ms="20531" started-at="2020-04-12T01:09:01Z" finished-at="2020-04-12T01:09:22Z">
+        <test-method status="PASS" signature="blankPassword()[pri:0, instance:com.OrangeCrm.automation.testCases.LoginTest@146ba0ac]" name="blankPassword" duration-ms="5200" started-at="2020-04-12T19:41:30Z" finished-at="2020-04-12T19:41:35Z">
+          <reporter-output>
+            <line>
+              <![CDATA[P Navigated to https://opensource-demo.orangehrmlive.com/ <br>]]>
+            </line>
+            <line>
+              <![CDATA[P LoginPage has been successfully loaded <br>]]>
+            </line>
+            <line>
+              <![CDATA[P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br>]]>
+            </line>
+            <line>
+              <![CDATA[F Text Mismatched by locator:By.xpath: //span[@id='spanMessage'].  Expected -Password cannot be empty, Actual -Username cannot be empty<br>]]>
+            </line>
+            <line>
+              <![CDATA[P TestCase executed successfully:TestName=blankPassword ; TestResult=PASS<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- blankPassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeCrm.automation.testCases.LoginTest@146ba0ac]" name="tearDown" is-config="true" duration-ms="813" started-at="2020-04-12T19:41:35Z" finished-at="2020-04-12T19:41:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="initialization()[pri:0, instance:com.OrangeCrm.automation.testCases.LoginTest@146ba0ac]" name="initialization" is-config="true" duration-ms="6895" started-at="2020-04-12T19:41:36Z" finished-at="2020-04-12T19:41:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="blankUserName()[pri:0, instance:com.OrangeCrm.automation.testCases.LoginTest@146ba0ac]" name="blankUserName" duration-ms="7552" started-at="2020-04-12T19:41:43Z" finished-at="2020-04-12T19:41:51Z">
+          <reporter-output>
+            <line>
+              <![CDATA[P Navigated to https://opensource-demo.orangehrmlive.com/ <br>]]>
+            </line>
+            <line>
+              <![CDATA[P LoginPage has been successfully loaded <br>]]>
+            </line>
+            <line>
+              <![CDATA[P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br>]]>
+            </line>
+            <line>
+              <![CDATA[P Text Matched by locator:By.xpath: //span[@id='spanMessage']. Expected -Username cannot be empty, Actual -Username cannot be empty<br>]]>
+            </line>
+            <line>
+              <![CDATA[P TestCase executed successfully:TestName=blankUserName ; TestResult=PASS<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- blankUserName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeCrm.automation.testCases.LoginTest@146ba0ac]" name="tearDown" is-config="true" duration-ms="1324" started-at="2020-04-12T19:41:51Z" finished-at="2020-04-12T19:41:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="initialization()[pri:0, instance:com.OrangeCrm.automation.testCases.LoginTest@146ba0ac]" name="initialization" is-config="true" duration-ms="10833" started-at="2020-04-12T19:41:52Z" finished-at="2020-04-12T19:42:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="blankUserNamePassword()[pri:0, instance:com.OrangeCrm.automation.testCases.LoginTest@146ba0ac]" name="blankUserNamePassword" duration-ms="3854" started-at="2020-04-12T19:42:03Z" finished-at="2020-04-12T19:42:07Z">
+          <reporter-output>
+            <line>
+              <![CDATA[P Navigated to https://opensource-demo.orangehrmlive.com/ <br>]]>
+            </line>
+            <line>
+              <![CDATA[P LoginPage has been successfully loaded <br>]]>
+            </line>
+            <line>
+              <![CDATA[P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br>]]>
+            </line>
+            <line>
+              <![CDATA[P Text Matched by locator:By.xpath: //span[@id='spanMessage']. Expected -Username cannot be empty, Actual -Username cannot be empty<br>]]>
+            </line>
+            <line>
+              <![CDATA[P TestCase executed successfully:TestName=blankUserNamePassword ; TestResult=PASS<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- blankUserNamePassword -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeCrm.automation.testCases.LoginTest@146ba0ac]" name="tearDown" is-config="true" duration-ms="696" started-at="2020-04-12T19:42:07Z" finished-at="2020-04-12T19:42:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="initialization()[pri:0, instance:com.OrangeCrm.automation.testCases.LoginTest@146ba0ac]" name="initialization" is-config="true" duration-ms="5310" started-at="2020-04-12T19:42:07Z" finished-at="2020-04-12T19:42:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.OrangeCrm.automation.testCases.LoginTest@146ba0ac]" name="validLoginTest" duration-ms="15699" started-at="2020-04-12T19:42:13Z" finished-at="2020-04-12T19:42:28Z">
           <reporter-output>
             <line>
               <![CDATA[P Navigated to https://opensource-demo.orangehrmlive.com/ <br>]]>
@@ -91,17 +223,20 @@
             <line>
               <![CDATA[P WelcomePage has been successfully loaded <br>]]>
             </line>
+            <line>
+              <![CDATA[P TestCase executed successfully:TestName=validLoginTest ; TestResult=PASS<br>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeCrm.automation.testCases.TestCases@204f30ec]" name="tearDown" is-config="true" duration-ms="10896" started-at="2020-04-12T01:09:22Z" finished-at="2020-04-12T01:09:33Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeCrm.automation.testCases.LoginTest@146ba0ac]" name="tearDown" is-config="true" duration-ms="700" started-at="2020-04-12T19:42:28Z" finished-at="2020-04-12T19:42:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="initialization()[pri:0, instance:com.OrangeCrm.automation.testCases.TestCases@204f30ec]" name="initialization" is-config="true" duration-ms="8370" started-at="2020-04-12T01:09:33Z" finished-at="2020-04-12T01:09:41Z">
+        <test-method status="PASS" signature="initialization()[pri:0, instance:com.OrangeCrm.automation.testCases.LoginTest@146ba0ac]" name="initialization" is-config="true" duration-ms="10350" started-at="2020-04-12T19:42:29Z" finished-at="2020-04-12T19:42:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method status="PASS" signature="validateMultiLogin()[pri:0, instance:com.OrangeCrm.automation.testCases.TestCases@204f30ec]" name="validateMultiLogin" duration-ms="22868" started-at="2020-04-12T01:09:41Z" finished-at="2020-04-12T01:10:04Z">
+        <test-method status="PASS" signature="validateMultiLogin()[pri:0, instance:com.OrangeCrm.automation.testCases.LoginTest@146ba0ac]" name="validateMultiLogin" duration-ms="15415" started-at="2020-04-12T19:42:40Z" finished-at="2020-04-12T19:42:55Z">
           <reporter-output>
             <line>
               <![CDATA[P Navigated to https://opensource-demo.orangehrmlive.com/ <br>]]>
@@ -151,13 +286,16 @@
             <line>
               <![CDATA[P WelcomePage has been successfully loaded <br>]]>
             </line>
+            <line>
+              <![CDATA[P TestCase executed successfully:TestName=validateMultiLogin ; TestResult=PASS<br>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- validateMultiLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeCrm.automation.testCases.TestCases@204f30ec]" name="tearDown" is-config="true" duration-ms="1815" started-at="2020-04-12T01:10:04Z" finished-at="2020-04-12T01:10:06Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.OrangeCrm.automation.testCases.LoginTest@146ba0ac]" name="tearDown" is-config="true" duration-ms="761" started-at="2020-04-12T19:42:55Z" finished-at="2020-04-12T19:42:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.OrangeCrm.automation.testCases.TestCases -->
+      </class> <!-- com.OrangeCrm.automation.testCases.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

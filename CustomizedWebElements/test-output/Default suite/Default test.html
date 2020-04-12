@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Apr 12 01:08:53 IST 2020</td>
+<td>Started on:</td><td>Sun Apr 12 19:41:10 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>73 seconds (73107 ms)</td>
+<tr><td>Total time:</td><td>105 seconds (105200 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,27 +75,76 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.OrangeCrm.automation.testCases.TestCases.validLoginTest()'><b>validLoginTest</b><br>Test class: com.OrangeCrm.automation.testCases.TestCases<br/>
-<a href="#Output-292138977" onClick='toggleBox("Output-292138977", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OrangeCrm.automation.testCases.LoginTest.blankPassword()'><b>blankPassword</b><br>Test class: com.OrangeCrm.automation.testCases.LoginTest<br/>
+<a href="#Output-1371495133" onClick='toggleBox("Output-1371495133", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-292138977" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-292138977">
+<a href="#Output-1371495133" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1371495133">
+P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>
+P LoginPage has been successfully loaded <br><br/>
+P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>
+F Text Mismatched by locator:By.xpath: //span[@id='spanMessage'].  Expected -Password cannot be empty, Actual -Username cannot be empty<br><br/>
+P TestCase executed successfully:TestName=blankPassword ; TestResult=PASS<br><br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>com.OrangeCrm.automation.testCases.LoginTest@146ba0ac</td></tr>
+<tr>
+<td title='com.OrangeCrm.automation.testCases.LoginTest.blankUserName()'><b>blankUserName</b><br>Test class: com.OrangeCrm.automation.testCases.LoginTest<br/>
+<a href="#Output-304715920" onClick='toggleBox("Output-304715920", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-304715920" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-304715920">
+P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>
+P LoginPage has been successfully loaded <br><br/>
+P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>
+P Text Matched by locator:By.xpath: //span[@id='spanMessage']. Expected -Username cannot be empty, Actual -Username cannot be empty<br><br/>
+P TestCase executed successfully:TestName=blankUserName ; TestResult=PASS<br><br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>com.OrangeCrm.automation.testCases.LoginTest@146ba0ac</td></tr>
+<tr>
+<td title='com.OrangeCrm.automation.testCases.LoginTest.blankUserNamePassword()'><b>blankUserNamePassword</b><br>Test class: com.OrangeCrm.automation.testCases.LoginTest<br/>
+<a href="#Output-644052207" onClick='toggleBox("Output-644052207", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-644052207" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-644052207">
+P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>
+P LoginPage has been successfully loaded <br><br/>
+P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>
+P Text Matched by locator:By.xpath: //span[@id='spanMessage']. Expected -Username cannot be empty, Actual -Username cannot be empty<br><br/>
+P TestCase executed successfully:TestName=blankUserNamePassword ; TestResult=PASS<br><br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.OrangeCrm.automation.testCases.LoginTest@146ba0ac</td></tr>
+<tr>
+<td title='com.OrangeCrm.automation.testCases.LoginTest.validLoginTest()'><b>validLoginTest</b><br>Test class: com.OrangeCrm.automation.testCases.LoginTest<br/>
+<a href="#Output-1221027335" onClick='toggleBox("Output-1221027335", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1221027335" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1221027335">
 P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>
 P LoginPage has been successfully loaded <br><br/>
 P Value Matched by locator:By.xpath: //input[@id='btnLogin']. Expected -LOGIN, Actual -LOGIN<br><br/>
 P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>
 P WelcomePage has been successfully loaded <br><br/>
+P TestCase executed successfully:TestName=validLoginTest ; TestResult=PASS<br><br/>
 </div>
 </td>
 <td></td>
-<td>20</td>
-<td>com.OrangeCrm.automation.testCases.TestCases@204f30ec</td></tr>
+<td>15</td>
+<td>com.OrangeCrm.automation.testCases.LoginTest@146ba0ac</td></tr>
 <tr>
-<td title='com.OrangeCrm.automation.testCases.TestCases.validateMultiLogin()'><b>validateMultiLogin</b><br>Test class: com.OrangeCrm.automation.testCases.TestCases<br/>
-<a href="#Output-69062746" onClick='toggleBox("Output-69062746", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OrangeCrm.automation.testCases.LoginTest.validateMultiLogin()'><b>validateMultiLogin</b><br>Test class: com.OrangeCrm.automation.testCases.LoginTest<br/>
+<a href="#Output-2096539129" onClick='toggleBox("Output-2096539129", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-69062746" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-69062746">
+<a href="#Output-2096539129" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2096539129">
 P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>
 P LoginPage has been successfully loaded <br><br/>
 P Value Matched by locator:By.xpath: //input[@id='btnLogin']. Expected -LOGIN, Actual -LOGIN<br><br/>
@@ -112,11 +161,12 @@ P Value Matched by locator:By.xpath: //input[@id='btnLogin']. Expected -LOGIN, A
 P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>
 Valid Credential : Admin & admin123<br><br/>
 P WelcomePage has been successfully loaded <br><br/>
+P TestCase executed successfully:TestName=validateMultiLogin ; TestResult=PASS<br><br/>
 </div>
 </td>
 <td></td>
-<td>22</td>
-<td>com.OrangeCrm.automation.testCases.TestCases@204f30ec</td></tr>
+<td>15</td>
+<td>com.OrangeCrm.automation.testCases.LoginTest@146ba0ac</td></tr>
 </table><p>
 </body>
 </html>
