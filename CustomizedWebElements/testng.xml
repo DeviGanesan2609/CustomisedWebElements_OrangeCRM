@@ -3,7 +3,15 @@
 <suite thread-count="2" name="Suite" parallel="methods">
   <test name="Test">
     <classes>
-      <class name="com.OrangeCrm.automation.testCases.TestCases"/>
+      <class name="com.OrangeCrm.automation.testCases.LoginTest">
+      <methods>
+      <include name="TC001_blankUserNamePassword" />
+      <include name="TC002_blankUserName" />
+      <include name="TC003_blankPassword" />
+      <include name="TC004_validLoginTest" />
+      <include name="TC005_validateMultiLogin" />
+      </methods>
+      </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

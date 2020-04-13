@@ -1,2 +1,121 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Default suite</th></tr><tr><td><a href="#t0">Default test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">105,200</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">com.OrangeCrm.automation.testCases.LoginTest</td><td><a href="#m0">blankPassword</a></td><td rowspan="1">1586700690769</td><td rowspan="1">5200</td></tr><tr class="passedeven"><td><a href="#m1">blankUserName</a></td><td rowspan="1">1586700703681</td><td rowspan="1">7552</td></tr><tr class="passedeven"><td><a href="#m2">blankUserNamePassword</a></td><td rowspan="1">1586700723395</td><td rowspan="1">3854</td></tr><tr class="passedeven"><td><a href="#m3">validLoginTest</a></td><td rowspan="1">1586700733259</td><td rowspan="1">15699</td></tr><tr class="passedeven"><td><a href="#m4">validateMultiLogin</a></td><td rowspan="1">1586700760012</td><td rowspan="1">15415</td></tr></tbody></table><h2>Default test</h2><h3 id="m0">com.OrangeCrm.automation.testCases.LoginTest#blankPassword</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>P LoginPage has been successfully loaded <br><br/>P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>F Text Mismatched by locator:By.xpath: //span[@id='spanMessage'].  Expected -Password cannot be empty, Actual -Username cannot be empty<br><br/>P TestCase executed successfully:TestName=blankPassword ; TestResult=PASS<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.OrangeCrm.automation.testCases.LoginTest#blankUserName</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>P LoginPage has been successfully loaded <br><br/>P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>P Text Matched by locator:By.xpath: //span[@id='spanMessage']. Expected -Username cannot be empty, Actual -Username cannot be empty<br><br/>P TestCase executed successfully:TestName=blankUserName ; TestResult=PASS<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.OrangeCrm.automation.testCases.LoginTest#blankUserNamePassword</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>P LoginPage has been successfully loaded <br><br/>P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>P Text Matched by locator:By.xpath: //span[@id='spanMessage']. Expected -Username cannot be empty, Actual -Username cannot be empty<br><br/>P TestCase executed successfully:TestName=blankUserNamePassword ; TestResult=PASS<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.OrangeCrm.automation.testCases.LoginTest#validLoginTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>P LoginPage has been successfully loaded <br><br/>P Value Matched by locator:By.xpath: //input[@id='btnLogin']. Expected -LOGIN, Actual -LOGIN<br><br/>P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>P WelcomePage has been successfully loaded <br><br/>P TestCase executed successfully:TestName=validLoginTest ; TestResult=PASS<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.OrangeCrm.automation.testCases.LoginTest#validateMultiLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>P LoginPage has been successfully loaded <br><br/>P Value Matched by locator:By.xpath: //input[@id='btnLogin']. Expected -LOGIN, Actual -LOGIN<br><br/>P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>Invalid Credentials : ram & sita<br><br/>P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>P LoginPage has been successfully loaded <br><br/>P Value Matched by locator:By.xpath: //input[@id='btnLogin']. Expected -LOGIN, Actual -LOGIN<br><br/>P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>Invalid Credentials : durai & devi<br><br/>P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>P LoginPage has been successfully loaded <br><br/>P Value Matched by locator:By.xpath: //input[@id='btnLogin']. Expected -LOGIN, Actual -LOGIN<br><br/>P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>Valid Credential : Admin & admin123<br><br/>P WelcomePage has been successfully loaded <br><br/>P TestCase executed successfully:TestName=validateMultiLogin ; TestResult=PASS<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Suite</th></tr><tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">36,587</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.OrangeCrm.automation.testCases.LoginTest</td><td><a href="#m0">tearDown</a></td><td rowspan="1">1586702114518</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.OrangeCrm.automation.testCases.LoginTest</td><td><a href="#m1">TC004_validLoginTest</a></td><td rowspan="1">1586702103318</td><td rowspan="1">11169</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">com.OrangeCrm.automation.testCases.LoginTest</td><td><a href="#m2">tearDown</a></td><td rowspan="1">1586702121705</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.OrangeCrm.automation.testCases.LoginTest</td><td><a href="#m3">TC005_validateMultiLogin</a></td><td rowspan="1">1586702121696</td><td rowspan="1">3</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.OrangeCrm.automation.testCases.LoginTest</td><td><a href="#m4">TC001_blankUserNamePassword</a></td><td rowspan="1">1586702091119</td><td rowspan="1">6965</td></tr><tr class="passedeven"><td><a href="#m5">TC002_blankUserName</a></td><td rowspan="1">1586702091103</td><td rowspan="1">6996</td></tr><tr class="passedeven"><td><a href="#m6">TC003_blankPassword</a></td><td rowspan="1">1586702103462</td><td rowspan="1">10274</td></tr></tbody></table><h2>Test</h2><h3 id="m0">com.OrangeCrm.automation.testCases.LoginTest#tearDown</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:5025 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
+System info: host: &apos;USER-PC&apos;, ip: &apos;192.168.171.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:537)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.quit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.quit(EventFiringWebDriver.java:203)
+	at com.OrangeCrm.automation.basePackage.TestBase.tearDown(TestBase.java:72)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:5025 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:139)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 26 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 39 more
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">com.OrangeCrm.automation.testCases.LoginTest#TC004_validLoginTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>P LoginPage has been successfully loaded <br><br/>P Value Matched by locator:By.xpath: //input[@id='btnLogin']. Expected -LOGIN, Actual -LOGIN<br><br/>P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[text()=&apos;Dashboard&apos;]&quot;}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
+System info: host: &apos;USER-PC&apos;, ip: &apos;192.168.171.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir6972_1720804394}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:17642}, acceptInsecureCerts=false, browserVersion=80.0.3987.163, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true}]
+Session ID: 5ac3f1eee3f330f976f1acba8babd98d
+*** Element info: {Using=xpath, value=//h1[text()=&apos;Dashboard&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:513)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at com.OrangeCrm.automation.webElement.customElements.concreteElements.CRMCustomWebElement.waitForVisible(CRMCustomWebElement.java:91)
+	at com.OrangeCrm.automation.webElement.customElements.concreteElements.CRMWebPageElement$$EnhancerByCGLIB$$421af083.CGLIB$waitForVisible$7(&lt;generated&gt;)
+	at com.OrangeCrm.automation.webElement.customElements.concreteElements.CRMWebPageElement$$EnhancerByCGLIB$$421af083$$FastClassByCGLIB$$94a122a8.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.OrangeCrm.automation.webElement.customElementsDecorator.CustomElementLocator.intercept(CustomElementLocator.java:50)
+	at com.OrangeCrm.automation.webElement.customElements.concreteElements.CRMWebPageElement$$EnhancerByCGLIB$$421af083.waitForVisible(&lt;generated&gt;)
+	at com.OrangeCrm.automation.pages.WelcomePage.waitForPageToLoad(WelcomePage.java:44)
+	at com.OrangeCrm.automation.testCases.LoginTest.TC004_validLoginTest(LoginTest.java:92)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">com.OrangeCrm.automation.testCases.LoginTest#tearDown</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m3">com.OrangeCrm.automation.testCases.LoginTest#TC005_validateMultiLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:5025 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
+System info: host: &apos;USER-PC&apos;, ip: &apos;192.168.171.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:537)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.quit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.quit(EventFiringWebDriver.java:203)
+	at com.OrangeCrm.automation.basePackage.TestBase.tearDown(TestBase.java:72)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:5025 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:139)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 26 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 39 more
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m4">com.OrangeCrm.automation.testCases.LoginTest#TC001_blankUserNamePassword</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>P LoginPage has been successfully loaded <br><br/>P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>P Text Matched by locator:By.xpath: //span[@id='spanMessage']. Expected -Username cannot be empty, Actual -Username cannot be empty<br><br/>P TestCase executed successfully:TestName=TC001_blankUserNamePassword ; TestResult=PASS<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m5">com.OrangeCrm.automation.testCases.LoginTest#TC002_blankUserName</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>P LoginPage has been successfully loaded <br><br/>P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>P Text Matched by locator:By.xpath: //span[@id='spanMessage']. Expected -Username cannot be empty, Actual -Username cannot be empty<br><br/>P TestCase executed successfully:TestName=TC002_blankUserName ; TestResult=PASS<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m6">com.OrangeCrm.automation.testCases.LoginTest#TC003_blankPassword</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>P LoginPage has been successfully loaded <br><br/>P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>F Text Mismatched by locator:By.xpath: //span[@id='spanMessage'].  Expected -Password cannot be empty, Actual -Username cannot be empty<br><br/>P TestCase executed successfully:TestName=TC003_blankPassword ; TestResult=PASS<br></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

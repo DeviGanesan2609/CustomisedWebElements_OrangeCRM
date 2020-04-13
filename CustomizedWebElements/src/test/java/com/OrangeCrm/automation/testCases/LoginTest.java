@@ -67,8 +67,8 @@ public class LoginTest extends TestBase{
 		loginPage.invoke();
 		loginPage.waitForPageToLoad();
 		
-		loginPage.textBoxUserName.sendKeys("");
-		loginPage.textBoxPassword.sendKeys("Test");
+		loginPage.textBoxUserName.sendKeys("Test");
+		loginPage.textBoxPassword.sendKeys("");
 		loginPage.buttonLogin.click();
 	
 		loginPage.errorInvalidCredential.verifyText("Password cannot be empty");

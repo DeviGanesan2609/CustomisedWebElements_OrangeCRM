@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>3/1/1</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Apr 11 16:56:50 IST 2020</td>
+<td>Started on:</td><td>Sun Apr 12 20:04:45 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>45 seconds (45949 ms)</td>
+<tr><td>Total time:</td><td>36 seconds (36587 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,20 +75,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.OrangeCrm.automation.testCases.TestCases.tearDown()'><b>tearDown</b><br>Test class: com.OrangeCrm.automation.testCases.TestCases</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:1574 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+<td title='com.OrangeCrm.automation.testCases.LoginTest.tearDown()'><b>tearDown</b><br>Test class: com.OrangeCrm.automation.testCases.LoginTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:5025 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
 System info: host: &apos;USER-PC&apos;, ip: &apos;192.168.171.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
-Driver info: driver.version: RemoteWebDriver
+Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)
 	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:537)
-	at com.OrangeCrm.automation.basePackage.TestBase.tearDown(TestBase.java:63)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.quit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.quit(EventFiringWebDriver.java:203)
+	at com.OrangeCrm.automation.basePackage.TestBase.tearDown(TestBase.java:72)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:1574 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:5025 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
@@ -103,7 +106,7 @@ Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:1
 	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	... 19 more
+	... 26 more
 Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
@@ -115,17 +118,24 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.Socket.connect(Unknown Source)
 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	... 32 more
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace811890952", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace811890952'><pre>org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:1574 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	... 39 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace155549822", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace155549822'><pre>org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:5025 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
 System info: host: &apos;USER-PC&apos;, ip: &apos;192.168.171.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
-Driver info: driver.version: RemoteWebDriver
+Driver info: driver.version: EventFiringWebDriver
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)
 	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:537)
-	at com.OrangeCrm.automation.basePackage.TestBase.tearDown(TestBase.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.quit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.quit(EventFiringWebDriver.java:203)
+	at com.OrangeCrm.automation.basePackage.TestBase.tearDown(TestBase.java:72)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -141,7 +151,7 @@ Driver info: driver.version: RemoteWebDriver
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:1574 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:5025 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
@@ -156,7 +166,7 @@ Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:1
 	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	... 19 more
+	... 26 more
 Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
 	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
@@ -168,10 +178,23 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	at java.net.Socket.connect(Unknown Source)
 	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-	... 32 more
+	... 39 more
 </pre></div></td>
 <td>0</td>
-<td>com.OrangeCrm.automation.testCases.TestCases@343f4d3d</td></tr>
+<td>com.OrangeCrm.automation.testCases.LoginTest@f6c48ac</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.OrangeCrm.automation.testCases.LoginTest.tearDown()'><b>tearDown</b><br>Test class: com.OrangeCrm.automation.testCases.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>com.OrangeCrm.automation.testCases.LoginTest@f6c48ac</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -181,40 +204,60 @@ Caused by: java.net.ConnectException: Connection refused: connect
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.OrangeCrm.automation.testCases.TestCases.validateMultiLogin()'><b>validateMultiLogin</b><br>Test class: com.OrangeCrm.automation.testCases.TestCases<br/>
-<a href="#Output-690175386" onClick='toggleBox("Output-690175386", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OrangeCrm.automation.testCases.LoginTest.TC004_validLoginTest()'><b>TC004_validLoginTest</b><br>Test class: com.OrangeCrm.automation.testCases.LoginTest<br/>
+<a href="#Output-1071358669" onClick='toggleBox("Output-1071358669", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-690175386" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-690175386">
-LoginPage has been successfully loaded <br><br/>
+<a href="#Output-1071358669" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1071358669">
+P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>
+P LoginPage has been successfully loaded <br><br/>
+P Value Matched by locator:By.xpath: //input[@id='btnLogin']. Expected -LOGIN, Actual -LOGIN<br><br/>
+P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[text()=&apos;Dashboard&apos;]&quot;}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
 System info: host: &apos;USER-PC&apos;, ip: &apos;192.168.171.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir15052_252525839}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:4613}, acceptInsecureCerts=false, browserVersion=80.0.3987.149, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true}]
-Session ID: 4c684986b147bb9810c3bf72bf07f7e0
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir6972_1720804394}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:17642}, acceptInsecureCerts=false, browserVersion=80.0.3987.163, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true}]
+Session ID: 5ac3f1eee3f330f976f1acba8babd98d
+*** Element info: {Using=xpath, value=//h1[text()=&apos;Dashboard&apos;]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:378)
-	at com.OrangeCrm.automation.basePackage.TestBase.getCurrentUrl(TestBase.java:172)
-	at com.OrangeCrm.automation.testCases.TestCases.validateMultiLogin(TestCases.java:68)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:513)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at com.OrangeCrm.automation.webElement.customElements.concreteElements.CRMCustomWebElement.waitForVisible(CRMCustomWebElement.java:91)
+	at com.OrangeCrm.automation.webElement.customElements.concreteElements.CRMWebPageElement$$EnhancerByCGLIB$$421af083.CGLIB$waitForVisible$7(&lt;generated&gt;)
+	at com.OrangeCrm.automation.webElement.customElements.concreteElements.CRMWebPageElement$$EnhancerByCGLIB$$421af083$$FastClassByCGLIB$$94a122a8.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.OrangeCrm.automation.webElement.customElementsDecorator.CustomElementLocator.intercept(CustomElementLocator.java:50)
+	at com.OrangeCrm.automation.webElement.customElements.concreteElements.CRMWebPageElement$$EnhancerByCGLIB$$421af083.waitForVisible(&lt;generated&gt;)
+	at com.OrangeCrm.automation.pages.WelcomePage.waitForPageToLoad(WelcomePage.java:44)
+	at com.OrangeCrm.automation.testCases.LoginTest.TC004_validLoginTest(LoginTest.java:92)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 14 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace690175386", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace690175386'><pre>org.openqa.selenium.NoSuchSessionException: invalid session id
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1071358669", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1071358669'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[text()=&apos;Dashboard&apos;]&quot;}
+  (Session info: chrome=80.0.3987.163)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
 System info: host: &apos;USER-PC&apos;, ip: &apos;192.168.171.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir15052_252525839}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:4613}, acceptInsecureCerts=false, browserVersion=80.0.3987.149, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true}]
-Session ID: 4c684986b147bb9810c3bf72bf07f7e0
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=79.0.3945.36 (3582db32b33893869b8c1339e8f4d9ed1816f143-refs/branch-heads/3945@{#614}), userDataDir=C:\Users\user\AppData\Local\Temp\scoped_dir6972_1720804394}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:17642}, acceptInsecureCerts=false, browserVersion=80.0.3987.163, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true}]
+Session ID: 5ac3f1eee3f330f976f1acba8babd98d
+*** Element info: {Using=xpath, value=//h1[text()=&apos;Dashboard&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -225,10 +268,24 @@ Session ID: 4c684986b147bb9810c3bf72bf07f7e0
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)
-	at org.openqa.selenium.remote.RemoteWebDriver.getCurrentUrl(RemoteWebDriver.java:378)
-	at com.OrangeCrm.automation.basePackage.TestBase.getCurrentUrl(TestBase.java:172)
-	at com.OrangeCrm.automation.testCases.TestCases.validateMultiLogin(TestCases.java:68)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:513)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:189)
+	at com.OrangeCrm.automation.webElement.customElements.concreteElements.CRMCustomWebElement.waitForVisible(CRMCustomWebElement.java:91)
+	at com.OrangeCrm.automation.webElement.customElements.concreteElements.CRMWebPageElement$$EnhancerByCGLIB$$421af083.CGLIB$waitForVisible$7(&lt;generated&gt;)
+	at com.OrangeCrm.automation.webElement.customElements.concreteElements.CRMWebPageElement$$EnhancerByCGLIB$$421af083$$FastClassByCGLIB$$94a122a8.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at com.OrangeCrm.automation.webElement.customElementsDecorator.CustomElementLocator.intercept(CustomElementLocator.java:50)
+	at com.OrangeCrm.automation.webElement.customElements.concreteElements.CRMWebPageElement$$EnhancerByCGLIB$$421af083.waitForVisible(&lt;generated&gt;)
+	at com.OrangeCrm.automation.pages.WelcomePage.waitForPageToLoad(WelcomePage.java:44)
+	at com.OrangeCrm.automation.testCases.LoginTest.TC004_validLoginTest(LoginTest.java:92)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -243,8 +300,8 @@ Session ID: 4c684986b147bb9810c3bf72bf07f7e0
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
-<td>8</td>
-<td>com.OrangeCrm.automation.testCases.TestCases@343f4d3d</td></tr>
+<td>11</td>
+<td>com.OrangeCrm.automation.testCases.LoginTest@f6c48ac</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -254,30 +311,169 @@ Session ID: 4c684986b147bb9810c3bf72bf07f7e0
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.OrangeCrm.automation.testCases.TestCases.testCustomeWebElement()'><b>testCustomeWebElement</b><br>Test class: com.OrangeCrm.automation.testCases.TestCases<br/>
-<a href="#Output-447676793" onClick='toggleBox("Output-447676793", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OrangeCrm.automation.testCases.LoginTest.TC001_blankUserNamePassword()'><b>TC001_blankUserNamePassword</b><br>Test class: com.OrangeCrm.automation.testCases.LoginTest<br/>
+<a href="#Output-1652102328" onClick='toggleBox("Output-1652102328", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-447676793" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-447676793">
-LoginPage has been successfully loaded <br><br/>
+<a href="#Output-1652102328" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1652102328">
+P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>
+P LoginPage has been successfully loaded <br><br/>
+P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>
+P Text Matched by locator:By.xpath: //span[@id='spanMessage']. Expected -Username cannot be empty, Actual -Username cannot be empty<br><br/>
+P TestCase executed successfully:TestName=TC001_blankUserNamePassword ; TestResult=PASS<br><br/>
 </div>
 </td>
 <td></td>
-<td>29</td>
-<td>com.OrangeCrm.automation.testCases.TestCases@343f4d3d</td></tr>
+<td>6</td>
+<td>com.OrangeCrm.automation.testCases.LoginTest@f6c48ac</td></tr>
 <tr>
-<td title='com.OrangeCrm.automation.testCases.TestCases.validLoginTest()'><b>validLoginTest</b><br>Test class: com.OrangeCrm.automation.testCases.TestCases<br/>
-<a href="#Output-1882724011" onClick='toggleBox("Output-1882724011", this, "Show output", "Hide output");'>Show output</a>
+<td title='com.OrangeCrm.automation.testCases.LoginTest.TC002_blankUserName()'><b>TC002_blankUserName</b><br>Test class: com.OrangeCrm.automation.testCases.LoginTest<br/>
+<a href="#Output-513551321" onClick='toggleBox("Output-513551321", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1882724011" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1882724011">
-LoginPage has been successfully loaded <br><br/>
-WelcomePage has been successfully loaded <br><br/>
+<a href="#Output-513551321" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-513551321">
+P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>
+P LoginPage has been successfully loaded <br><br/>
+P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>
+P Text Matched by locator:By.xpath: //span[@id='spanMessage']. Expected -Username cannot be empty, Actual -Username cannot be empty<br><br/>
+P TestCase executed successfully:TestName=TC002_blankUserName ; TestResult=PASS<br><br/>
 </div>
 </td>
 <td></td>
-<td>15</td>
-<td>com.OrangeCrm.automation.testCases.TestCases@343f4d3d</td></tr>
+<td>6</td>
+<td>com.OrangeCrm.automation.testCases.LoginTest@f6c48ac</td></tr>
+<tr>
+<td title='com.OrangeCrm.automation.testCases.LoginTest.TC003_blankPassword()'><b>TC003_blankPassword</b><br>Test class: com.OrangeCrm.automation.testCases.LoginTest<br/>
+<a href="#Output-563600931" onClick='toggleBox("Output-563600931", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-563600931" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-563600931">
+P Navigated to https://opensource-demo.orangehrmlive.com/ <br><br/>
+P LoginPage has been successfully loaded <br><br/>
+P Clicked on the element by locator: -> xpath: //input[@id='btnLogin']]<br><br/>
+F Text Mismatched by locator:By.xpath: //span[@id='spanMessage'].  Expected -Password cannot be empty, Actual -Username cannot be empty<br><br/>
+P TestCase executed successfully:TestName=TC003_blankPassword ; TestResult=PASS<br><br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>com.OrangeCrm.automation.testCases.LoginTest@f6c48ac</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.OrangeCrm.automation.testCases.LoginTest.TC005_validateMultiLogin()'><b>TC005_validateMultiLogin</b><br>Test class: com.OrangeCrm.automation.testCases.LoginTest</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:5025 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
+System info: host: &apos;USER-PC&apos;, ip: &apos;192.168.171.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:537)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.quit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.quit(EventFiringWebDriver.java:203)
+	at com.OrangeCrm.automation.basePackage.TestBase.tearDown(TestBase.java:72)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:5025 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:139)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 26 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 39 more
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace977154853", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace977154853'><pre>org.openqa.selenium.WebDriverException: org.apache.http.conn.HttpHostConnectException: Connect to localhost:5025 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
+System info: host: &apos;USER-PC&apos;, ip: &apos;192.168.171.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_101&apos;
+Driver info: driver.version: EventFiringWebDriver
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:91)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:698)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:537)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.quit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.quit(EventFiringWebDriver.java:203)
+	at com.OrangeCrm.automation.basePackage.TestBase.tearDown(TestBase.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:5025 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:139)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:87)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	... 26 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 39 more
+</pre></div></td>
+<td>0</td>
+<td>com.OrangeCrm.automation.testCases.LoginTest@f6c48ac</td></tr>
 </table><p>
 </body>
 </html>
