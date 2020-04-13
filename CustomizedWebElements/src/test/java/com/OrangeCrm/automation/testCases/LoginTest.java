@@ -52,7 +52,6 @@ public class LoginTest extends TestBase{
 		loginPage.invoke();
 		loginPage.waitForPageToLoad();
 		
-		loginPage.textBoxUserName.sendKeys("");
 		loginPage.textBoxPassword.sendKeys("Test");
 		loginPage.buttonLogin.click();
 	
