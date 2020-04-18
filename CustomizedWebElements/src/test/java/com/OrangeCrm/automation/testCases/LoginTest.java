@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -14,15 +15,19 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.OrangCrm.dataDriven.DataDriven;
 import com.OrangeCrm.automation.basePackage.CustomTestListener;
 import com.OrangeCrm.automation.basePackage.TestBase;
 import com.OrangeCrm.automation.pages.LoginPage;
 import com.OrangeCrm.automation.pages.WelcomePage;
 import com.OrangeCrm.automation.webElement.customElementsDecorator.CustomElementFieldDecorator;
+import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -94,7 +99,8 @@ public class LoginTest extends TestBase{
 	@Test
 	public void TC005_validateMultiLogin() throws FileNotFoundException, IOException, ParseException
 	{
-		String dataFile ="C:\\Users\\user\\Desktop\\LEARNING-Devi\\FreeCRmWorkSpace\\CustomizedWebElements\\resources\\Data2.json";
+		//String dataFile ="C:\\Users\\user\\Desktop\\LEARNING-Devi\\FreeCRmWorkSpace\\CustomizedWebElements\\resources\\Data2.json";
+		String dataFile ="C:\\Users\\user\\Desktop\\LEARNING-Devi\\Git Local Repos\\CustomisedWebElements_OrangeCRM\\CustomizedWebElements\\resources\\Data2.json";
 		String testMethod ="validateMultiLogin";
 		
 		Map<String,Object> data =getTestData2(testMethod,dataFile);
@@ -127,6 +133,16 @@ public class LoginTest extends TestBase{
 		}
 		}
 	}
+	
+	@Test(dataProvider ="testcaseData",dataProviderClass=DataDriven.class)
+	public void validateDataProvider(Map<String,Object> data)
+	{
+		System.out.println(data);
+		System.out.println(data.get("userName"));
+		System.out.println(data.get("password"));
+	}
+	
+	
 	
 	
 

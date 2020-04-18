@@ -39,6 +39,7 @@ public class TestBase  {
 	public static WebDriverWait wait;
 	public static EventFiringWebDriver webDriver;
 	public static CustomEventListener listen;
+	public static ObjectMapper jsonMapper;
 	
 	@BeforeMethod
 	public void initialization()
